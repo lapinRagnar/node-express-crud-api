@@ -3,12 +3,15 @@ const { get } = require('express/lib/response');
 
 const app = express()
 
+// donnée
 const data = [
     {id: 1, language: "javascript" },
     {id: 2, language: "ruby" },
     {id: 3, language: "pyhon" }
 ]
 
+// midldeware
+app.use(express.json())                               // permet de faire le post
 
 // routes
 
@@ -31,6 +34,16 @@ app.get('/:id', (req, res) => {
     res.status(200).json(element)
 })
 
+// creation d'une donnée - post
+app.post('/', (req, res) => {
+    const { body } = req
+    const nouvelElement = {
+        id: data.length + 1,
+        ...body
+    }
+    data.push(nouvelElement)
+    res.status(200).json(nouvelElement)
+})
 
 
 
