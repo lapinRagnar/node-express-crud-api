@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  },
+  "name": "4_crud_express_api_2",
+  "description": "Api crud nodejs express\r -----------------------",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapinRagnar/node-express-crud-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lapinRagnar/node-express-crud-api/issues"
+  },
+  "homepage": "https://github.com/lapinRagnar/node-express-crud-api#readme"
+}
